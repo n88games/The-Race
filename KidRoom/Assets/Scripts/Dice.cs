@@ -78,7 +78,7 @@ public class Dice : MonoBehaviour {
         camFollow.CanFollow =  true;
 		Vector3 randomRotation = new Vector3(Random.Range(100,360),225,Random.Range(100,360));
 		rg.rotation = Quaternion.Euler(randomRotation);
-		rg.AddForce(Random.Range(3.2f,4.15f)*throwDirection,ForceMode.VelocityChange);
+		rg.AddForce(Random.Range(3.52f,4.15f)*throwDirection,ForceMode.VelocityChange);
 		rg.useGravity = true;
 		StartCoroutine(WaitForDiceToStop());
 	}
